@@ -11,7 +11,6 @@ SuperPoder volar = SuperPoder.CreaPoder("Volar", "Capacidad para volar y planear
 SuperPoder regeneracion = SuperPoder.CreaPoder("Regeneración", "Capacidad regenerar el tejido muscular, óseo y la piel", NivelPoder.NivelTres);
 SuperPoder superFuerza = SuperPoder.CreaPoder("Super Fuerza", "Caapacidad de levantar un coche", NivelPoder.NivelDos);
 
-//telarania.CreaPoder("nombre 1","descripcion 1",NivelPoder.NivelDos);
 
 //Creo un objeto de lista llamado poderesSuperman
 List<SuperPoder> poderesSuperman = new List<SuperPoder>();
@@ -55,6 +54,10 @@ string delito = wolverine.CometerDelito(accionAntiHeroe);
 Console.WriteLine(delito);
 
 
+var imprimeSuperman = new ImprimirInfo();
+imprimeSuperman.ImprimirSuperHeroe(superman);
+var imprimeWolverine = new ImprimirInfo();
+imprimeWolverine.ImprimirTodo(wolverine);
 
-//https://platzi.com/new-home/clases/8036-c-sharp-poo/64453-que-es-una-interfaz/
+public record SUperHeroeRecord(int Id, string Nombre, string IdentidadSecreta);
 
